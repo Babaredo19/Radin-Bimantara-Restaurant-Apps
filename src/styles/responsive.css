@@ -1,0 +1,127 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 500px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 670px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        min-width: 44px;
+        min-height: 44px;
+        margin: 6px 0;
+        color: rgb(247, 247, 247);
+    }
+    .nav-bar{
+        height: 0;
+         position: absolute;
+         top: 80px;
+         left: 0;
+         right: 0;
+         width: 100vw;
+         background: #8c9630;
+         transition: 0.5s;
+         overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 450px;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin:  80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+    .headline__content {
+        margin: 0 auto;
+        max-width: 650px;
+    }
+
+    .post-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .post-item__title {
+        font-size: 18px;
+    }
+
+    .post-item__description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav__list {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .headline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .headline__content{
+        padding: 16px 32px;
+    }
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}
+
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
